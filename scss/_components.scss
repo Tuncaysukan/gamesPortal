@@ -1,0 +1,33 @@
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    background-color: $light-color;
+    color: $primary-color;
+    letter-spacing: 1px;
+    transition: all .5s;
+
+    &:hover{
+    background-color: $primary-color;
+    color: $light-color;
+    
+    }
+//btn-primary  class
+    &-primary{
+        background-color: $primary-color;
+        color: $light-color;
+
+        &:hover{
+            //btn-primary  hover 
+            background-color: $light-color;
+            color: $primary-color;
+        }
+    }
+}
+/** mixin */
+
+@mixin display-flex ($display,$items,$justify) {
+    
+    display: $display;
+    align-items: $items;
+    justify-content: $justify;
+}

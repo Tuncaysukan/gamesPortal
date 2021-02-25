@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Font Awesome CSS-->
     <link rel="stylesheet" href="css/font-awesome-all.css">
+    <!--OWL Carousel CSS-->
+    <link rel="stylesheet" href="/css/owl.carousel.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.css">
+
     <!--Custom CSS-->
     <link rel="stylesheet" href="css/style.css">
     <title>Tncy Game Portal</title>
@@ -14,10 +18,10 @@
 
 <body>
     <!--Header start-->
-    <header class="main-header">
+    <header class="main-header bg-dark">
 
         <!--top Header start-->
-        <div class="top-header">
+        <div class="top-header ">
             <div class="container">
                 <div class="logo">
                     <h1>Tncy <span>Game</span></h1>
@@ -31,8 +35,8 @@
                     <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                 </ul>
                 <div class="login-area">
-                    <a class="btn" href="#">Login <span> <i class="fas fa-sign-in-alt"></i> </span> </a>
-                    <a class="btn" href="#">Sign Up <span> <i class="fas fa-user-plus"></i> </span> </a>
+                    <a class="btn btn-primary" href="#">Login <span> <i class="fas fa-sign-in-alt"></i> </span> </a>
+                    <a class="btn ml-2" href="#">Sign Up <span> <i class="fas fa-user-plus"></i> </span> </a>
 
 
                 </div>
@@ -61,7 +65,7 @@
                             <li><a href="#">Software</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
-                        <div class="seach">
+                        <div class="search">
                             <input type="text" name="search" placeholder="Search">
                             <button type="submit" class="btn"><i class="fas fa-search"></i></button>
                         </div>
@@ -74,7 +78,80 @@
     </header>
     <!--Header end-->
 
+    <!--main start -->
+    <main role="main">
+        <!--slider start -->
+        <div class="main-slider owl-carousel owl-theme">
 
+            <!--single-slider start -->
+            <div class="single-slider" data-dot="<span>01.</span>">
+                <img src="img/slide_1.jpg" alt="">
+                <div class="slide-overlay">
+                    <div class="container">
+                        <div class="slide-content">
+                            <h2>Tncy Game Portal</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, exercitationem? Fuga ex,
+                                atque officia quidem ipsa pariatur amet sit et eius eum debitis alias, exercitationem
+                                sed necessitatibus laudantium quasi </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--single- slider end -->
+            <!--single-slider start -->
+            <div class="single-slider" data-dot="<span>02.</span>">
+                <img src="img/slide_2.jpg" alt="">
+                <div class="slide-overlay">
+                    <div class="container">
+                        <div class="slide-content">
+                            <h2>Tncy Game Portal</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, exercitationem? Fuga ex,
+                                atque officia quidem ipsa pariatur amet sit et eius eum debitis alias, exercitationem
+                                sed necessitatibus laudantium quasi </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--single- slider end -->
+            <!--single-slider start -->
+            <div class="single-slider " data-dot="<span>03.</span>">
+                <img src="img/slide_3.jpg" alt="">
+                <div class="slide-overlay">
+                    <div class="container">
+                        <div class="slide-content">
+                            <h2>Tncy Game Portal</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, exercitationem? Fuga ex,
+                                atque officia quidem ipsa pariatur amet sit et eius eum debitis alias, exercitationem
+                                sed necessitatibus laudantium quasi </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--single- slider end -->
+
+        </div>
+        <!--slider end-->
+
+        <!--News Slider Start -->
+        <div class="latest-news">
+            <div class="latest-news-title"></div>
+            <div class="latest-news-content"></div>
+
+        </div>
+         <!--News Slider End -->
+
+    </main>
+
+    <!--main  end-->
+
+    <!--Scrip start-->
+    <script src="js/jquery-3.5.1.js"></script>
+    <!--Scrip owl carousel-->
+    <script src="js/owl.carousel.js"></script>
+    <!--custom js -->
+    <script src="js/main.js"></script>
+    <!--Scrip end-->
 </body>
 
 </html>
+

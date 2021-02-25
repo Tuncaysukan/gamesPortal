@@ -9,3 +9,16 @@ $data-color:#FFB320;
 $commet-color:#08ABBD;
 $gray-color:#9f9f9f;
 $light-color:#FEFEFE;
+
+/*Utilities */
+
+.bg{
+   &-dark{ background-color: $secondary-color;}
+   &-light{ background-color: $secondary-color;}
+
+}
+.ml{
+    &-2{
+        margin-left: 2rem;
+    }
+}
