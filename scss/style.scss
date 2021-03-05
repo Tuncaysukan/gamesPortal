@@ -1,6 +1,7 @@
 
     @import'abstracts';
     @import'components';
+    @import'animations';
 
 
     //General Settings 
@@ -36,6 +37,11 @@
         color: $primary-color;
         letter-spacing: .5rem;
         font-weight: 300;
+    }
+    h4{
+        font-size: 3rem;
+        color: $light-color;
+        font-weight: 2rem;
     }
 
     a {
@@ -183,6 +189,7 @@
                     border-bottom: 2px solid $primary-color;
                     padding: 10rem 7rem;
                     background: linear-gradient(to right rgba(0, 0, 0, .6), rgba(0, 0, 0, .6));
+                    animation: mainAni 3s ease-out;
 
                     p {
                         font-size: 1.5rem;
@@ -236,6 +243,27 @@
     .latest-news{
         background-color: $primary-color;
         display: flex;
-        justify-content: space-between;
+       height: 8rem;
+       align-items: center;
+    &-title
+    {
+        flex-basis: 25%;
+        text-align: right;
+        padding-right: 2rem;
+    }   &-content{
+        flex-basis: 75%;
+        background-color: $secondary-color;
+        height: 100%;
+        display: flex;
+        .news-ticker{
+         @include display-flex(flex,center,space-between);
+            line-height: 8rem;
+            p{
+                color: $light-color;
+                font-size: 1.4rem;
+            }
+        }
+
+    }
         
     }
